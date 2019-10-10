@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".help_centre"
+    android:layout_margin="16dp"
+    android:padding="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:id="@+id/call_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_call_black_24dp"
+                android:contentDescription="@string/call"/>
+
+            <TextView
+                android:id="@+id/call_cust_care"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call"
+                android:textColor="@color/color_purple"
+                android:layout_toEndOf="@+id/call_img"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_text"
+                android:textColor="@color/grey"
+                android:layout_toEndOf="@+id/call_img"
+                android:layout_below="@+id/call_cust_care"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_mail"
+        android:layout_below="@+id/card_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:id="@+id/mail_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_mail_black_24dp"
+                android:contentDescription="@string/mail_us"/>
+
+            <TextView
+                android:id="@+id/mail_cust_care"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mail_us"
+                android:textColor="@color/color_purple"
+                android:layout_toEndOf="@+id/mail_img"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mail_text"
+                android:textColor="@color/grey"
+                android:layout_toEndOf="@+id/mail_img"
+                android:layout_below="@+id/mail_cust_care"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="@color/color_purple"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:text="@string/cancel"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+         />
+
+
+
+</RelativeLayout>

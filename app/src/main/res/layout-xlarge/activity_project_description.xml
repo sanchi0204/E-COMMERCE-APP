@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".form"
+android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".form"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_user_info_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/profile_pic_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="175dp"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                app:srcCompat="@drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="35dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="@string/click_here_to_add_a_passport_size_photo"
+                android:textColor="@color/cardview_dark_background"
+                tools:ignore="PrivateResource" />
+
+        </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_layout_name"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temp_user_name"
+                    android:inputType="textPersonName"
+                    android:textSize="25sp"
+                    android:hint="@string/Name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_layout_mobile"
+                android:layout_marginTop="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/temp_user_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="@string/phone"
+                    android:inputType="textPhonetic"
+                    android:textSize="25sp" />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_layout_address"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temp_user_address"
+                    android:inputType="textPostalAddress"
+                    android:textSize="25sp"
+                    android:hint="@string/address"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_layout_city"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temp_user_city"
+                    android:inputType="textPostalAddress"
+                    android:textSize="25sp"
+                    android:hint="@string/city"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_layout_state"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temp_user_state"
+                    android:inputType="textPostalAddress"
+                    android:textSize="25sp"
+                    android:hint="@string/state"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_layout_email"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temp_user_email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="25sp"
+                    android:hint="@string/email"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_layout_website_url"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temp_user_website_url"
+                    android:inputType="textUri"
+                    android:textSize="25sp"
+                    android:hint="@string/website"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_layout_instagram_url"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temp_user_instagram_url"
+                    android:inputType="textUri"
+                    android:textSize="25sp"
+                    android:hint="@string/instagram"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_layout_facebook_url"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temp_user_facebook_url"
+                    android:inputType="textUri"
+                    android:textSize="25sp"
+                    android:hint="@string/facebook"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_layout_linked_in_url"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temp_user_linked_in_url"
+                    android:inputType="textUri"
+                    android:textSize="25sp"
+                    android:hint="@string/linked_in"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_layout_designation"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temp_user_designation"
+                    android:inputType="textCapWords"
+                    android:textSize="25sp"
+                    android:hint="@string/designation"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_layout_work_type"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temp_user_work_type"
+                    android:inputType="textCapWords"
+                    android:textSize="25sp"
+                    android:hint="@string/profession"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <Button
+        android:id="@+id/Save_Button"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:background="@color/color_purple"
+        android:gravity="center_vertical"
+        android:text="@string/save"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

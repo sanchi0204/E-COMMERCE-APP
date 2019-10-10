@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/cambay_bold</item>
+        <item>@font/gafata</item>
+        <item>@font/maitree_extralight</item>
+        <item>@font/rajdhani_medium</item>
+        <item>@font/rajdhani_semi_bold</item>
+        <item>@font/rajdhani_medium</item>
+        <item>@font/rambla_bold</item>
+    </array>
+</resources>

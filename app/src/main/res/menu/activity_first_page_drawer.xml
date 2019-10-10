@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_location_city_black_24dp"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_wishlist"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Wish List"/>
+
+        <!--<item-->
+            <!--android:id="@+id/nav_notification"-->
+            <!--android:icon="@drawable/ic_forum_black_24dp"-->
+            <!--android:title="Notifications" />-->
+
+        <item
+            android:id="@+id/nav_My_order"
+            android:icon="@drawable/ic_next_week_black_24dp"
+            android:title="My Orders" />
+
+        <item
+            android:id="@+id/nav_My_cart"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="My Cart" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_next_week_black_24dp"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_input_black_24dp"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_help_centre"
+                android:icon="@drawable/ic_call_black_24dp"
+                android:title="Help Centre" />
+
+        </menu>
+    </item>
+
+</menu>

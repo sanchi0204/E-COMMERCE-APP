@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/order_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/order_image"
+                android:layout_width="450dp"
+                android:layout_height="380dp"
+                android:contentDescription="@string/prod_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ar_selfie" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/order_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/rajdhani_medium"
+                    android:text="@string/prod_name"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="50sp"
+
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/order_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+
+                    android:text="@string/prod_price"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="50sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/my_order_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="@string/description1"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey"
+                    android:textSize="48sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/order_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:text="@string/order_date"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey"
+                    android:textSize="47sp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+
+                    android:id="@+id/order_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:text="@string/order_time"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey"
+                    android:textSize="47sp"
+                    android:textStyle="normal"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
